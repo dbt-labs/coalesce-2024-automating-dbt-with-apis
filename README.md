@@ -66,7 +66,7 @@ pprint.pp(job_trigger_data)
 import pprint
 import requests
 
-my_headers = {"Authorization": "Token dbtc_PCSnkLIfRM-adbcRhdcOQn_nG396pUc2ZqBbUeI4ayrmktWqB4"}
+my_headers = {"Authorization": "Token TOK"}
 
 resp = requests.get("https://th031.us1.dbt.com/api/v2/accounts/70403103954898/runs/", headers = my_headers)
 
@@ -247,7 +247,7 @@ query ($environmentId: BigInt!, $first: Int!) {
 import requests
 import pprint
 
-headers = {'Authorization': 'Bearer dbtc_PCSnkLIfRM-adbcRhdcOQn_nG396pUc2ZqBbUeI4ayrmktWqB4'}
+headers = {'Authorization': 'Bearer TOK'}
 
 graphql_query = """
 query ($environmentId: BigInt!, $first: Int) {
@@ -286,7 +286,7 @@ Bonus
 import requests
 import pprint
 
-headers = {'Authorization': 'Bearer dbtc_PCSnkLIfRM-adbcRhdcOQn_nG396pUc2ZqBbUeI4ayrmktWqB4'}
+headers = {'Authorization': 'Bearer TOK'}
 
 graphql_query = ...
 ...
